@@ -24,11 +24,15 @@
 <div class="container">
     <!--    Navigation Bar-->
     <div th:insert="base :: navbar"></div>
+
+<!--    Food I brought: <textarea rows="4" cols="50" name="food"></textarea>-->
+
     <br><br>
     <div align="center">
         <span style="color:white" th:size="5"><b>
             <form action="#" th:action="@{/processform}" method="post">
                 Suggestion: <input type="text" name="suggest" />
+<!--                Suggestions: <textarea rows="4" cols="50" name="food"></textarea>-->
                 <!--    login: <input type="text" name="login" />-->
                 <!--    Comment: <textarea rows="3" name="comment" />-->
                 <input type="submit" value="Submit" />
