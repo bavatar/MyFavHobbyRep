@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Amethyst</title>
-    <div th:insert="base::header"></div> <style>
+    <title>Suggestions</title>
+    <div th:insert="base::header"></div>
+    <style>
+        /*Internal Style*/
         .container{
             background: url(https://res.cloudinary.com/ascension-enterprises/image/upload/v1569343860/samples/Java%20Boot%20Camp/u9UeFz_baef1p.jpg) no-repeat center center fixed;
             -webkit-background-size: cover;
@@ -13,44 +14,29 @@
             font-family: "Source Code Pro";
             font-size: large;
         }
+        /*@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');*/
     </style>
+    <!--    External Style-->
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css">
 </head>
 <body style="background-color: lightyellow">
 <br>
 <div class="container">
     <!--    Navigation Bar-->
     <div th:insert="base :: navbar"></div>
-
-    <div class="jumbotron" style="background-color: lightcyan">
-        <center><h1>Amethyst</h1></center>
+    <br><br>
+    <div align="center">
+        <span style="color:white" th:size="5"><b>
+            <form action="#" th:action="@{/processform}" method="post">
+                Suggestion: <input type="text" name="suggest" />
+                <!--    login: <input type="text" name="login" />-->
+                <!--    Comment: <textarea rows="3" name="comment" />-->
+                <input type="submit" value="Submit" />
+            </form></b>
+        </span>
     </div>
-
-    <center>
-    <img src="https://res.cloudinary.com/ascension-enterprises/image/upload/v1569436599/samples/Java%20Boot%20Camp/amethyst_yzxlkh.jpg"
-         alt="Amethyst"
-         height="200">
-    </center>
-
-    <h2>Description:</h2>
-    <b>
-        <p>The Amethyst crystal is .</p>
-    </b>
-
-    <div th:marginwidth="200">
-        <h2 th:marginwidth="400">Properties:</h2>
-        <div>
-            <ul>
-                <b>
-                    <li>Transforms lower level energy to a higher level</li>
-                    <li>Prop2</li>
-                    <li>Prop3</li>
-                </b>
-            </ul>
-        </div>
-    </div>
-<br><br><br>
+    <br><br><br><br>
 </div>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

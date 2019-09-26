@@ -1,0 +1,16 @@
+div#d1{
+    font-family: 'Mansalva', cursive;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#list{
+    font-family: 'Flamenco', cursive;
+}
+
+.jumbotron{
+    font-family: 'Belgrano', serif;
+}

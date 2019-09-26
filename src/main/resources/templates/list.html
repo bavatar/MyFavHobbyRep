@@ -22,20 +22,9 @@
     <link rel="stylesheet" type="text/css" href="css/myStyle.css">
 </head>
 <body style="background-color: lightyellow">
-<!--<div id="d1">-->
-<!--    <nav class="nav">-->
-<!--        <a class="nav-link active" href="#"><strong>Nav Bar</strong></a>-->
-<!--        <a class="nav-link" href="/">Crystal Collection</a>-->
-<!--        <a class="nav-link" href="/amethyst">Amethyst</a>-->
-<!--        <a class="nav-link" href="/rose-quartz">Rose Quartz</a>-->
-<!--        <a class="nav-link" href="/herkimer">Herkimer Diamond</a>-->
-<!--        <a class="nav-link" href="/selenite">Selenite</a>-->
-<!--    </nav>-->
-<!--</div>-->
-<!--<br>-->
-
+<br>
 <div class="container" >
-<!--    Navigation Bar-->
+    <!--    Navigation Bar-->
     <div th:insert="base :: navbar"></div>
 
     <div class="jumbotron" style="background-color: lightcyan">
@@ -69,8 +58,12 @@
                 </th>
             </tr>
             <tr>
-                <th>
-                <p></p><a href="/suggestions">Suggestions</a></p>
+                <th align="center">
+                    <p><a href="/loadform">Suggestions</a></p>
+                </th>
+                <th align="center">
+                    <p><a href="/timeline">Timeline</a></p>
+                    <p><a href="/calendar">Calendar</a></p>
                 </th>
             </tr>
         </table>
